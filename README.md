@@ -1,4 +1,4 @@
-# SPFx Applications Customiser CSS Injection
+# SPFx Applications Customizer CSS Injection
 
 ## Summary
 
@@ -6,9 +6,9 @@ This sample shows how to inject a custom Cascading Style Sheet (CSS) on modern p
 
 ![Sample super ugly CSS to illustrate custom CSS injection](./assets/sampleresults.png)
 
-> **Note**: This code is provided as a sample only. Keep in mind that Microsoft may change page elements and styles at any time, rendering your custom CSS useless. It is preferrable to use well-known HTML element placeholders.
+> **Note**: This code is provided as a sample only. Keep in mind that Microsoft may change page elements and styles at any time, rendering your custom CSS useless. It is preferable to use well-known HTML element placeholders.
 
-When you need to make minor cosmetic changes to modern pages (e.g.:  match your corporate branding guidelines) and cannot use placeholders,you can create a custom CSS and inject on every modern page.
+When you need to make minor cosmetic changes to modern pages (e.g.: match your corporate branding guidelines) and cannot use placeholders,you can create a custom CSS and inject on every modern page.
 
 In this example, we deploy the CSS in a shared location; this allows us to change the CSS file at any time without re-deploying or re-configuring the application customizer.
 
@@ -18,30 +18,31 @@ Please refrain from making drastic changes that may negatively impact your users
 
 ## Used SharePoint Framework Version
 
-![SPFx v1.8](https://img.shields.io/badge/SPFx-1.8-green.svg)
+![SPFx v1.19](https://img.shields.io/badge/SPFx-1.19-green.svg)
 
 ## Applies to
 
-* [SharePoint Framework Extensions](https://dev.office.com/sharepoint/docs/spfx/extensions/overview-extensions)
-* [Office 365 developer tenant](http://dev.office.com/sharepoint/docs/spfx/set-up-your-developer-tenant)
+- [SharePoint Framework Extensions](https://dev.office.com/sharepoint/docs/spfx/extensions/overview-extensions)
+- [Office 365 developer tenant](http://dev.office.com/sharepoint/docs/spfx/set-up-your-developer-tenant)
 
 ## Solution
 
-Solution|Author(s)
---------|---------
-react-application-injectcss|Hugo Bernier ([Tahoe Ninjas](http://tahoeninjas.blog), @bernierh)
+| Solution                    | Author(s)                                                         |
+| --------------------------- | ----------------------------------------------------------------- |
+| react-application-injectcss | Hugo Bernier ([Tahoe Ninjas](http://tahoeninjas.blog), @bernierh) |
 
 ## Version history
 
-Version|Date|Comments
--------|----|--------
-1.0.0|07 May, 2018|Initial release
-1.1.0|18 October, 2018|Updated to SPFx 1.6
-1.2.0|28 March, 2018|Updated to SPFx 1.8
+| Version | Date             | Comments                           |
+| ------- | ---------------- | ---------------------------------- |
+| 1.0.0   | 07 May, 2018     | Initial release                    |
+| 1.1.0   | 18 October, 2018 | Updated to SPFx 1.6                |
+| 1.2.0   | 28 March, 2018   | Updated to SPFx 1.8                |
+| 1.2.0   | 24/07/2024       | Updated to SPFx 1.19. Node 16.19.1 |
 
 ## Disclaimer
 
-**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
 ---
 
@@ -65,7 +66,7 @@ For example, the CSS provided above will make the feedback button appear as foll
 
 ### Build the solution
 
-1. clone repo
+1. Clone repo
 2. Ryn `npm install`
 3. Run `gulp bundle --ship`
 4. Run `gulp package-solution --ship`
@@ -119,13 +120,3 @@ This approach allows you to override the CSS location by configuring the extensi
 5. The extension will be removed.
 
 If you wish to do so, you can remove the solution package from your tenant's app catalog after the extension has been de-activated.
-
-## Features
-
-Sample SharePoint Framework Application Customiser which injects a custom CSS in the HTML header.
-
-This sample illustrates the following concepts on top of the SharePoint Framework:
-
-* HTML manipulation
-
-<img src="https://telemetry.sharepointpnp.com/sp-dev-fx-extensions/samples/readme-template" />
